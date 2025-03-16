@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d31f42rhq8p5"]
+
+[ext_resource type="Script" uid="uid://cxwmnqpvc0v6o" path="res://maps/map.gd" id="1_c7s6e"]
+
+[node name="Map" type="Node2D" node_paths=PackedStringArray("space_list_scene", "top_left", "bottom_right")]
+script = ExtResource("1_c7s6e")
+space_list_scene = NodePath("Space list")
+top_left = NodePath("Top-left")
+bottom_right = NodePath("Bottom-right")
+
+[node name="Space list" type="Node2D" parent="."]
+
+[node name="Image" type="Sprite2D" parent="."]
+
+[node name="Top-left" type="Marker2D" parent="."]
+
+[node name="Bottom-right" type="Marker2D" parent="."]

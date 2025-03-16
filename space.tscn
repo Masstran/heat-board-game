@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1nkx5paag1hh"]
+
+[ext_resource type="Script" uid="uid://b5h1hh7qgil2a" path="res://space.gd" id="1_81phd"]
+[ext_resource type="PackedScene" uid="uid://d0v3b3dhohine" path="res://spot.tscn" id="1_d5lh8"]
+
+[node name="Space" type="Node2D"]
+z_index = 4096
+script = ExtResource("1_81phd")
+
+[node name="spot_left" parent="." instance=ExtResource("1_d5lh8")]
+position = Vector2(0, -75)
+
+[node name="spot_right" parent="." instance=ExtResource("1_d5lh8")]
+position = Vector2(0, 74)

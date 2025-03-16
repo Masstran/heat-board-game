@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0v3b3dhohine"]
+
+[ext_resource type="Script" uid="uid://bj5py6updrfi0" path="res://spot.gd" id="1_82nir"]
+
+[node name="Spot" type="Node2D"]
+script = ExtResource("1_82nir")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+scale = Vector2(1, 1.02)
+gizmo_extents = 73.0
+metadata/_edit_lock_ = true

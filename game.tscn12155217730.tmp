@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bonphytckwdah"]
+
+[ext_resource type="PackedScene" uid="uid://d11x2u7jbkfes" path="res://maps/USA_map.tscn" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://drqw4st53x2uc" path="res://game.gd" id="1_feb5d"]
+[ext_resource type="PackedScene" uid="uid://cvmqmwi115nbm" path="res://car.tscn" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://cp45i6k67hoc6" path="res://camera_2d.gd" id="4_fc0e3"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("map_scene", "car_scene")]
+script = ExtResource("1_feb5d")
+map_scene = NodePath("Map")
+car_scene = NodePath("Car")
+
+[node name="Map" parent="." instance=ExtResource("1_80nbo")]
+scale = Vector2(0.27, 0.27)
+
+[node name="Car" parent="." instance=ExtResource("2_e2o6t")]
+scale = Vector2(0.12, 0.12)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -1500
+limit_top = -1500
+limit_right = 1500
+limit_bottom = 1500
+script = ExtResource("4_fc0e3")
