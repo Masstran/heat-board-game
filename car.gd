@@ -8,6 +8,10 @@ class_name Car
 
 var spot_to_move_queue: Array[Spot] = []
 
+@export var node: Sprite2D
+
+#var nd = node.get_rect().size
+
 # vars for movement
 var pos_from
 var rotation_from

@@ -4,7 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://d1nkx5paag1hh" path="res://space.tscn" id="2_qbw3q"]
 [ext_resource type="Texture2D" uid="uid://drh3nqgpmtak1" path="res://assets/USA_map.png" id="3_718aw"]
 
-[node name="Map" instance=ExtResource("1_av0be")]
+[node name="Map" node_paths=PackedStringArray("image") instance=ExtResource("1_av0be")]
+stress_cards_count = 3
+image = NodePath("Image")
 
 [node name="Space list" parent="." index="0"]
 metadata/_edit_lock_ = true
@@ -333,9 +335,3 @@ rotation = 0.0172728
 [node name="Image" parent="." index="1"]
 texture = ExtResource("3_718aw")
 metadata/_edit_lock_ = true
-
-[node name="Top-left" parent="." index="2"]
-position = Vector2(-3938, -2553)
-
-[node name="Bottom-right" parent="." index="3"]
-position = Vector2(3938, 2553)
