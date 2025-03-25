@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceaye82wbc2y6"]
+
+[ext_resource type="Script" uid="uid://hw0k37qj2q22" path="res://cards/card.gd" id="1_kikvd"]
+
+[node name="Card" type="Node2D" node_paths=PackedStringArray("text_scene")]
+script = ExtResource("1_kikvd")
+text_scene = NodePath("Temporary Text")
+
+[node name="Image" type="Sprite2D" parent="."]
+
+[node name="Temporary Text" type="TextEdit" parent="."]
+offset_left = -125.0
+offset_top = -120.0
+offset_right = 122.0
+offset_bottom = 140.0
+placeholder_text = "Value: 1
+"
+editable = false

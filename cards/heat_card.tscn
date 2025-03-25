@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgpetyutp8ylh"]
+
+[ext_resource type="PackedScene" uid="uid://ceaye82wbc2y6" path="res://cards/card.tscn" id="1_m4unv"]
+
+[node name="HeatCard" instance=ExtResource("1_m4unv")]
+isHeat = true
+symbols = Array[int]([3])
